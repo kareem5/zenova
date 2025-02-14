@@ -178,7 +178,7 @@
           <!-- Contact Form -->
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
-              <form id="contact" action="contact.php" method="POST">
+              <form id="contact" onsubmit="return openMailClient(this);">
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
                     <fieldset>
@@ -202,7 +202,6 @@
                   </div>
                 </div>
               </form>
-              
             </div>
           </div>
           <!-- About Zenova -->
@@ -243,17 +242,28 @@
   <script src="assets/js/custom.js"></script>
 
   <script>
-    function encodeMailto(form) {
-      console.log("Form submitted");
-      var name = encodeURIComponent(form.name.value);
-      var email = encodeURIComponent(form.email.value);
-      var message = encodeURIComponent(form.message.value);
+    function openMailClient(form) {
+      // Get form field values and encode them for use in a URL
+      var name = encodeURIComponent(form.name.value.trim());
+      var email = encodeURIComponent(form.email.value.trim());
+      var message = encodeURIComponent(form.message.value.trim());
+    
+      // Construct the email subject and body
       var subject = "Inquiry from " + name;
-      var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0A%0D%0A" + "Message: " + message;
-      form.action = "mailto:info@zenovatech.net?subject=" + subject + "&body=" + body;
-      return true;
+      var body = "Hello, my name is " + name + ".\n\n" +
+                 "I am reaching out regarding: " + message + ".";
+    
+      // Build the mailto: URL (use encodeURIComponent for body)
+      var mailtoLink = "mailto:info@zenovatech.net" +
+                       "?subject=" + encodeURIComponent(subject) +
+                       "&body=" + encodeURIComponent(body);
+    
+      // Open the default mail client with the constructed URL
+      window.location.href = mailtoLink;
+    
+      // Return false to prevent the form from submitting normally
+      return false;
     }
-  </script>
-
+    </script>
 </body>
 </html>
