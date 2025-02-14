@@ -251,12 +251,12 @@
       // Construct the email subject and body
       var subject = "Inquiry from " + name;
       var body = "Hello, my name is " + name + ".\n\n" +
-                 "I am reaching out regarding: " + message + ".";
+                 "I am reaching out regarding: \n" + message + ".";
     
       // Build the mailto: URL (use encodeURIComponent for body)
       var mailtoLink = "mailto:info@zenovatech.net" +
-                       "?subject=" + encodeURIComponent(subject) +
-                       "&body=" + encodeURIComponent(body);
+                       "?subject=" + subject +
+                       "&body=" + body;
     
       // Open the default mail client with the constructed URL
       window.location.href = mailtoLink;
