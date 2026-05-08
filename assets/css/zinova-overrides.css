@@ -95,7 +95,7 @@ footer.zinova-footer {
   line-height: 28px;
 }
 
-.zinova-founder-panel {
+.zinova-studio-panel {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 44px;
@@ -105,8 +105,39 @@ footer.zinova-footer {
   border: 1px solid #eee;
 }
 
-.zinova-founder-panel p:last-child {
+.zinova-studio-panel p:last-child {
   margin-bottom: 0;
+}
+
+.zinova-lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.zinova-lang-switch a {
+  color: #7a7a7a;
+  padding: 8px 4px;
+}
+
+.zinova-lang-switch a.is-active {
+  color: #fba70b;
+}
+
+.background-header .zinova-lang-switch a {
+  color: #7a7a7a;
+}
+
+.background-header .zinova-lang-switch a.is-active {
+  color: #fba70b;
+}
+
+.header-area .main-nav .nav li.zinova-lang-item {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .zinova-service-card {

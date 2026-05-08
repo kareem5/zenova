@@ -1,0 +1,32 @@
+[dir="rtl"] .zinova-cred-list li {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+[dir="rtl"] .zinova-cred-list li:before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .zinova-service-card,
+[dir="rtl"] .zinova-cap-card {
+  text-align: right;
+}
+
+[dir="rtl"] .zinova-service-card h4,
+[dir="rtl"] .zinova-studio-panel {
+  text-align: right;
+}
+
+[dir="rtl"] .center-heading h2,
+[dir="rtl"] .center-heading p {
+  text-align: center;
+}
+
+[dir="rtl"] .zinova-hero-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .zinova-lang-switch a.is-active {
+  font-weight: 600;
+}
