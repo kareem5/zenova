@@ -40,6 +40,7 @@ body {
   --zinova-text-muted: #64748b;
   --zinova-text-on-dark: #f1f5f9;
   --zinova-text-muted-on-dark: #94a3b8;
+  --zinova-header-height-mobile: 72px;
 }
 
 html[lang="en"] body {
@@ -144,9 +145,17 @@ body.zinova-has-dark-hero a.main-button-secondary:hover {
 }
 
 @media (max-width: 991px) {
-  .welcome-area.zinova-hero .header-text {
+  body:not(.zinova-has-dark-hero) .welcome-area.zinova-hero .header-text {
     padding-top: 92px;
     padding-bottom: 40px;
+  }
+
+  body.zinova-has-dark-hero .welcome-area.zinova-hero .header-text {
+    padding-bottom: 40px;
+  }
+
+  html {
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + var(--zinova-header-height-mobile) + 12px);
   }
 }
 
@@ -207,8 +216,14 @@ body.zinova-has-dark-hero a.main-button-secondary:hover {
 }
 
 @media (max-width: 1140px) {
-  .welcome-area.zinova-hero .header-text {
+  body:not(.zinova-has-dark-hero) .welcome-area.zinova-hero .header-text {
     padding-top: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  body.zinova-has-dark-hero .welcome-area.zinova-hero .header-text {
+    padding-top: calc(env(safe-area-inset-top, 0px) + var(--zinova-header-height-mobile) + 20px) !important;
     width: 100% !important;
     margin-left: 0 !important;
   }
@@ -220,7 +235,7 @@ body.zinova-has-dark-hero a.main-button-secondary:hover {
 }
 
 @media (max-width: 810px) {
-  .welcome-area.zinova-hero .header-text {
+  body:not(.zinova-has-dark-hero) .welcome-area.zinova-hero .header-text {
     padding-top: 0 !important;
   }
 }
@@ -833,10 +848,18 @@ footer.zinova-footer {
 
 .header-area {
   height: 84px;
+  z-index: 1000;
 }
 
 .header-area .main-nav.zinova-main-nav {
   min-height: 64px;
+}
+
+@media (max-width: 991px) {
+  .header-area .main-nav.zinova-main-nav .zinova-nav-middle {
+    position: relative;
+    z-index: 1001;
+  }
 }
 
 .header-area.header-sticky .zinova-nav-middle .nav {
