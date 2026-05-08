@@ -1,11 +1,10 @@
 [dir="rtl"] body {
-  font-family: "Noto Sans Arabic", "Poppins", sans-serif;
+  font-family: var(--zinova-font-ar), "Cairo", system-ui, sans-serif;
 }
 
 [lang="ar"] .zinova-ar-hero-lead {
   font-size: 17px;
   line-height: 1.85;
-  color: #5a5a5a;
   margin-bottom: 0;
   max-width: 38rem;
 }

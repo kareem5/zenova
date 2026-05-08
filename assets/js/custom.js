@@ -248,3 +248,42 @@
 
 
 })(window.jQuery);
+
+(function () {
+	"use strict";
+	try {
+		if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			document.documentElement.classList.add("zinova-reduced-motion");
+			return;
+		}
+		var nodes = document.querySelectorAll(".zinova-reveal");
+		if (!nodes.length) {
+			return;
+		}
+		if (typeof IntersectionObserver === "undefined") {
+			for (var k = 0; k < nodes.length; k++) {
+				nodes[k].classList.add("is-visible");
+			}
+			return;
+		}
+		var io = new IntersectionObserver(
+			function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("is-visible");
+						io.unobserve(entry.target);
+					}
+				});
+			},
+			{ rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+		);
+		for (var i = 0; i < nodes.length; i++) {
+			io.observe(nodes[i]);
+		}
+	} catch (e) {
+		var fallback = document.querySelectorAll(".zinova-reveal");
+		for (var j = 0; j < fallback.length; j++) {
+			fallback[j].classList.add("is-visible");
+		}
+	}
+})();
