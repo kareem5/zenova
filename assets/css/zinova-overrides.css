@@ -138,6 +138,63 @@ footer.zinova-footer {
 .header-area .main-nav .nav li.zinova-lang-item {
   padding-left: 12px;
   padding-right: 12px;
+  border-bottom: none;
+}
+
+.zinova-lang-switch {
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .header-area .main-nav.zinova-main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-area .main-nav.zinova-main-nav .logo {
+    float: none !important;
+    flex-shrink: 0;
+  }
+
+  .header-area .main-nav.zinova-main-nav .nav {
+    float: none !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .header-area.header-sticky .main-nav.zinova-main-nav .nav {
+    margin-top: 0 !important;
+  }
+
+  .header-area .main-nav.zinova-main-nav .menu-trigger {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-area .main-nav.zinova-main-nav .nav li.zinova-lang-item {
+    border-bottom: 1px solid #eee;
+  }
+
+  .header-area .main-nav.zinova-main-nav .menu-trigger {
+    position: absolute !important;
+    right: 40px !important;
+    top: 23px !important;
+    display: block !important;
+  }
 }
 
 .zinova-service-card {
