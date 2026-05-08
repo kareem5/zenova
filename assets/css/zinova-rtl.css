@@ -76,6 +76,10 @@
   }
 }
 
+[lang="ar"] .zinova-cap-card h4 {
+  margin-top: 0;
+}
+
 [dir="rtl"] .zinova-cap-label {
   text-transform: none;
   letter-spacing: 0;
@@ -86,6 +90,10 @@
 [dir="rtl"] .zinova-process-step .zinova-step-num {
   text-transform: none;
   letter-spacing: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c67d3a;
+  margin-bottom: 8px;
 }
 
 [dir="rtl"] .zinova-hero-tagline {
