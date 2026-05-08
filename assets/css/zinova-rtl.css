@@ -177,6 +177,27 @@
   justify-content: flex-end;
 }
 
+@media (max-width: 991px) {
+  [dir="rtl"] .zinova-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  [dir="rtl"] .zinova-hero-actions .main-button-slider,
+  [dir="rtl"] .zinova-hero-actions .main-button-secondary {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  html[dir="rtl"] {
+    overflow-x: hidden;
+  }
+}
+
 [dir="rtl"] .zinova-lang-switch a.is-active {
   font-weight: 600;
 }
@@ -226,6 +247,7 @@
 [lang="ar"] .zinova-latin {
   unicode-bidi: embed;
   font-family: inherit;
+  overflow-wrap: anywhere;
 }
 
 body.zinova-ar-legal {

@@ -259,6 +259,7 @@
 		var nodes = document.querySelectorAll(".zinova-reveal");
 		var mqReduce = window.matchMedia("(prefers-reduced-motion: reduce)");
 		var mqMobile = window.matchMedia("(max-width: 991px)");
+		var useMobileLite = mqMobile.matches || window.innerWidth <= 991;
 
 		if (mqReduce.matches) {
 			document.documentElement.classList.add("zinova-reduced-motion");
@@ -268,7 +269,7 @@
 			return;
 		}
 
-		if (mqMobile.matches) {
+		if (useMobileLite) {
 			document.documentElement.classList.add("zinova-mobile-lite-motion");
 			for (var m = 0; m < nodes.length; m++) {
 				nodes[m].classList.add("is-visible");
