@@ -1,0 +1,351 @@
+.zinova-hero-tagline {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5c5c5c;
+  margin-bottom: 16px;
+}
+
+.zinova-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+a.main-button-secondary {
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 2px solid #191a20;
+  text-transform: uppercase;
+  color: #191a20;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a.main-button-secondary:hover {
+  background-color: #191a20;
+  color: #fff;
+  border-color: #191a20;
+}
+
+.welcome-area.zinova-hero {
+  background-image: none;
+  background: linear-gradient(135deg, #fafafa 0%, #f0f4f8 45%, #fef9f3 100%);
+  min-height: 680px;
+}
+
+.welcome-area.zinova-hero .header-text h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.welcome-area.zinova-hero .header-text h1 em {
+  color: #c67d3a;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .welcome-area.zinova-hero .header-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.left-image-decor {
+  display: none;
+}
+
+footer.zinova-footer {
+  background-image: none;
+  background: linear-gradient(160deg, #1a1d24 0%, #252932 50%, #1e2229 100%);
+  margin-top: 0;
+}
+
+.section-light {
+  background: #fff;
+}
+
+.section-alt {
+  background: #f9fafb;
+}
+
+.zinova-section {
+  padding: 88px 0 96px;
+  position: relative;
+}
+
+.zinova-section .center-heading {
+  margin-bottom: 48px;
+}
+
+.zinova-lead {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.zinova-founder-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 44px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee;
+}
+
+.zinova-founder-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.zinova-service-card {
+  border-radius: 8px;
+  padding: 36px 28px 40px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.zinova-service-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.zinova-service-card .zinova-service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(244, 129, 63, 0.12) 0%, rgba(241, 85, 106, 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.zinova-service-card .zinova-service-icon i {
+  font-size: 24px;
+  color: #d9732e;
+}
+
+.zinova-service-card h4 {
+  text-align: left;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.zinova-service-card p {
+  margin-bottom: 18px;
+}
+
+.zinova-service-card .zinova-service-more {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #d9732e;
+}
+
+.zinova-service-card .zinova-service-more:hover {
+  color: #f1556a;
+}
+
+.zinova-process-step {
+  padding: 28px 22px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.zinova-process-step .zinova-step-num {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #c67d3a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.zinova-process-step h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e1e1e;
+}
+
+.zinova-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.zinova-pill-list span {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #555;
+}
+
+.section-alt .zinova-pill-list span {
+  background: #f9fafb;
+}
+
+.zinova-cred-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.zinova-cred-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.zinova-cred-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #666;
+}
+
+.zinova-cred-list li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #c67d3a;
+  font-size: 14px;
+}
+
+.zinova-cap-card {
+  padding: 24px 22px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+.zinova-cap-card h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.zinova-cap-note {
+  max-width: 720px;
+  margin: 24px auto 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #888;
+  font-style: italic;
+}
+
+.zinova-cta-band {
+  padding: 72px 24px;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(244, 129, 63, 0.08) 0%, rgba(241, 85, 106, 0.08) 100%);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.zinova-cta-band h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form select {
+  color: #777;
+  font-size: 13px;
+  border: 1px solid #eee;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 30px;
+  appearance: auto;
+}
+
+.footer-content .right-content .zinova-footer-note {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-content .right-content .zinova-footer-note a {
+  color: #fba70b;
+}
+
+.sub-footer p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.page-hero {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background: linear-gradient(135deg, #fafafa 0%, #f0f4f8 100%);
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #191a20;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  font-size: 17px;
+  max-width: 640px;
+  color: #666;
+}
+
+.page-content {
+  padding: 60px 0 100px;
+}
+
+.page-content h2 {
+  font-size: 22px;
+  margin: 32px 0 14px;
+  color: #1e1e1e;
+}
+
+.page-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.page-content li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 26px;
+}

@@ -25,6 +25,9 @@
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		var box = $('.header-text').height();
+		if (!box) {
+			box = 120;
+		}
 		var header = $('header').height();
 
 		if (scroll >= box - header) {
