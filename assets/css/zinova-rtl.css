@@ -119,6 +119,19 @@
   }
 }
 
+@media (max-width: 991px) {
+  [dir="rtl"] .header-area .main-nav.zinova-main-nav .zinova-nav-inner .logo {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+  }
+
+  [dir="rtl"] .header-area .main-nav.zinova-main-nav .menu-trigger {
+    right: auto !important;
+    left: 15px !important;
+  }
+}
+
 [dir="rtl"] .zinova-cred-list li {
   padding-left: 0;
   padding-right: 28px;

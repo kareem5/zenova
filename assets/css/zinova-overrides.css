@@ -1,6 +1,18 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.row > [class*="col"] {
+  min-width: 0;
 }
 
 :root {
@@ -302,6 +314,7 @@ footer.zinova-footer {
   width: 100%;
   position: relative;
   min-height: 64px;
+  min-width: 0;
 }
 
 .header-area .main-nav.zinova-main-nav .zinova-nav-inner .logo {
@@ -613,6 +626,10 @@ footer.zinova-footer {
   font-size: 14px;
   color: var(--zinova-text-muted);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .zinova-pill-list span:hover {
@@ -980,24 +997,27 @@ button.main-button:hover {
 
 .zinova-hero-visual-wrap {
   position: relative;
+  max-width: 100%;
 }
 
 .zinova-hero-visual {
   position: relative;
   width: 100%;
-  max-width: 380px;
+  max-width: min(380px, 100%);
+  overflow: hidden;
+  border-radius: var(--zinova-radius-xl);
   animation: zinova-hero-float 22s ease-in-out infinite;
 }
 
 .zinova-hero-visual-glow {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: min(320px, 85vw);
+  height: min(320px, 85vw);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(129, 140, 248, 0.12) 45%, transparent 68%);
   filter: blur(16px);
   top: -56px;
-  right: -36px;
+  right: max(-36px, calc(-1 * min(28px, 5vw)));
   pointer-events: none;
   opacity: 0.85;
 }
@@ -1156,10 +1176,13 @@ button.main-button:hover {
   padding: 12px 14px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 12px;
+  max-width: 100%;
 }
 
 .zinova-hero-terminal-line {
   color: #e2e8f0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .zinova-hero-key {
@@ -1216,7 +1239,9 @@ button.main-button:hover {
 
 .zinova-hero-visual--compact {
   animation: none;
-  max-width: none;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
   margin-top: 12px;
   padding: 18px 16px;
   border-radius: var(--zinova-radius-lg);
@@ -1228,14 +1253,21 @@ button.main-button:hover {
 .zinova-hero-rail--compact {
   justify-content: center;
   margin-bottom: 12px;
-  gap: 10px;
+  gap: 8px;
+  row-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .zinova-hero-mini-api {
   text-align: center;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  font-size: clamp(10px, 2.9vw, 12px);
   color: rgba(226, 232, 240, 0.88);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .zinova-hero-visual--compact .zinova-hero-key {
@@ -1416,6 +1448,22 @@ a.main-button-secondary:hover {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  .zinova-service-card:hover,
+  .zinova-cap-card:hover,
+  .zinova-studio-panel:hover {
+    transform: none !important;
+  }
+
+  .zinova-hero-panel:hover {
+    transform: none !important;
+  }
+
+  a.main-button-slider:hover,
+  button.main-button:hover,
+  a.main-button-secondary:hover {
+    transform: none !important;
   }
 }
 
