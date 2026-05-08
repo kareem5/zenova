@@ -2,24 +2,25 @@
 
 	"use strict";
 
-
-	$('.owl-carousel').owlCarousel({
-		loop: true,
-		margin: 30,
-		nav: true,
-		pagination: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			1000: {
-				items: 2
+	if (typeof $.fn.owlCarousel !== "undefined" && $(".owl-carousel").length) {
+		$(".owl-carousel").owlCarousel({
+			loop: true,
+			margin: 30,
+			nav: true,
+			pagination: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 2
+				}
 			}
-		}
-	})
+		});
+	}
 
 
 	$(window).scroll(function () {
@@ -195,13 +196,13 @@
 
 
 	// Home seperator
-	if ($('.home-seperator').length) {
+	if ($.fn.imgfix && $('.home-seperator').length) {
 		$('.home-seperator .left-item, .home-seperator .right-item').imgfix();
 	}
 
 
 	// Home number counterup
-	if ($('.count-item').length) {
+	if ($.fn.counterUp && $('.count-item').length) {
 		$('.count-item strong').counterUp({
 			delay: 10,
 			time: 1000
