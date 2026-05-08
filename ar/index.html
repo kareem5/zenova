@@ -25,8 +25,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
   <link rel="stylesheet" href="../assets/css/templatemo-lava.css">
   <link rel="stylesheet" href="../assets/css/owl-carousel.css">
-  <link rel="stylesheet" href="../assets/css/zinova-overrides.css?v=20260510">
-  <link rel="stylesheet" href="../assets/css/zinova-rtl.css?v=20260510">
+  <link rel="stylesheet" href="../assets/css/zinova-overrides.css?v=20260512">
+  <link rel="stylesheet" href="../assets/css/zinova-rtl.css?v=20260512">
 </head>
 
 <body>
@@ -44,21 +44,25 @@
       <div class="row">
         <div class="col-12">
           <nav class="main-nav zinova-main-nav zinova-main-nav--compact" role="navigation" aria-label="التنقل الرئيسي">
-            <a href="/ar/#welcome" class="logo">Zinova</a>
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#welcome" class="menu-item">الرئيسية</a></li>
-              <li class="scroll-to-section"><a href="#services" class="menu-item">الخدمات</a></li>
-              <li class="scroll-to-section"><a href="#workflow" class="menu-item">طريقة العمل</a></li>
-              <li class="scroll-to-section"><a href="#contact-us" class="menu-item">تواصل</a></li>
-              <li class="zinova-lang-item">
-                <span class="zinova-lang-switch" dir="ltr">
-                  <a href="/" lang="en">EN</a>
-                  <span class="zinova-lang-sep" aria-hidden="true">|</span>
-                  <a href="/ar/" class="is-active" lang="ar">العربية</a>
-                </span>
-              </li>
-            </ul>
-            <a class="menu-trigger"><span>القائمة</span></a>
+            <div class="zinova-nav-inner">
+              <a href="/ar/#welcome" class="logo">Zinova</a>
+              <div class="zinova-nav-middle">
+                <ul class="nav">
+                  <li class="scroll-to-section"><a href="#welcome" class="menu-item">الرئيسية</a></li>
+                  <li class="scroll-to-section"><a href="#services" class="menu-item">الخدمات</a></li>
+                  <li class="scroll-to-section"><a href="#workflow" class="menu-item">طريقة العمل</a></li>
+                  <li class="scroll-to-section"><a href="#contact-us" class="menu-item">تواصل</a></li>
+                </ul>
+                <div class="zinova-nav-lang" aria-label="اللغة">
+                  <span class="zinova-lang-switch" dir="ltr">
+                    <a href="/" lang="en">EN</a>
+                    <span class="zinova-lang-sep" aria-hidden="true">|</span>
+                    <a href="/ar/" class="is-active" lang="ar">العربية</a>
+                  </span>
+                </div>
+              </div>
+              <a class="menu-trigger"><span>القائمة</span></a>
+            </div>
           </nav>
         </div>
       </div>
@@ -113,7 +117,7 @@
             <div class="zinova-service-icon"><i class="fa fa-compass"></i></div>
             <h4>دراسة وتخطيط المنتج</h4>
             <p>قبل بدء التطوير، نساعدك على تحديد نطاق المنتج، ترتيب الأولويات، ووضع خطة تنفيذ واضحة تناسب المرحلة الحالية للمشروع.</p>
-            <a class="zinova-service-more" href="/mvp-discovery.html">التفاصيل</a>
+            <a class="zinova-service-more" href="/ar/mvp-discovery.html">التفاصيل</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4" data-scroll-reveal="enter bottom move 24px over 0.55s after 0.12s">
@@ -121,7 +125,7 @@
             <div class="zinova-service-icon"><i class="fa fa-rocket"></i></div>
             <h4>تطوير النسخ الأولية MVP</h4>
             <p>نطوّر نسخ أولية قابلة للإطلاق تساعدك على اختبار الفكرة والانطلاق بسرعة مع أساس تقني قابل للنمو لاحقًا.</p>
-            <a class="zinova-service-more" href="/mvp-development.html">التفاصيل</a>
+            <a class="zinova-service-more" href="/ar/mvp-development.html">التفاصيل</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4" data-scroll-reveal="enter bottom move 24px over 0.55s after 0.16s">
@@ -281,6 +285,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
+              <p class="zinova-contact-disclaimer">لا يتم شراء الخدمات تلقائيًا من خلال الموقع. يبدأ كل تعاون بمحادثة قصيرة، ثم عرض مكتوب ونطاق عمل واضح يتم الاتفاق عليه.</p>
               <form id="contact" dir="rtl" onsubmit="return submitStrategyCallAr(this);">
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
@@ -348,7 +353,18 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="sub-footer">
-            <p>© ٢٠٢٦ زينوفا. جميع الحقوق محفوظة.</p>
+            <div class="zinova-footer-legal-block">
+              <p class="zinova-footer-legal-line">Zinova OÜ<br>شركة مسجلة في إستونيا</p>
+              <!-- TODO: Add Estonia registry code if needed -->
+              <nav class="zinova-footer-meta-links" aria-label="قانوني">
+                <a href="/ar/privacy.html">سياسة الخصوصية</a>
+                <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+                <a href="/ar/terms.html">الشروط والأحكام</a>
+                <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+                <a href="/ar/#contact-us">تواصل معنا</a>
+              </nav>
+              <p class="zinova-footer-copy">© ٢٠٢٦ زينوفا. جميع الحقوق محفوظة.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -363,7 +379,7 @@
   <script src="../assets/js/waypoints.min.js"></script>
   <script src="../assets/js/jquery.counterup.min.js"></script>
   <script src="../assets/js/imgfix.min.js"></script>
-  <script src="../assets/js/custom.js?v=20260510"></script>
+  <script src="../assets/js/custom.js?v=20260512"></script>
 
   <script>
     function submitStrategyCallAr(form) {

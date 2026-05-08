@@ -31,8 +31,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-lava.css">
   <link rel="stylesheet" href="assets/css/owl-carousel.css">
-  <link rel="stylesheet" href="assets/css/zinova-overrides.css?v=20260510">
-  <link rel="stylesheet" href="assets/css/zinova-rtl.css?v=20260510">
+  <link rel="stylesheet" href="assets/css/zinova-overrides.css?v=20260512">
+  <link rel="stylesheet" href="assets/css/zinova-rtl.css?v=20260512">
 
   <script type="application/ld+json">
   {
@@ -61,24 +61,26 @@
       <div class="row">
         <div class="col-12">
           <nav class="main-nav zinova-main-nav zinova-main-nav--compact" role="navigation" aria-label="Primary">
-            <a href="/#welcome" class="logo">Zinova</a>
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-              <li class="scroll-to-section"><a href="#studio" class="menu-item">Studio</a></li>
-              <li class="scroll-to-section"><a href="#services" class="menu-item">Services</a></li>
-              <li class="scroll-to-section"><a href="#process" class="menu-item">Process</a></li>
-              <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact</a></li>
-              <li class="zinova-lang-item" aria-label="Language">
-                <span class="zinova-lang-switch" dir="ltr">
-                  <a href="/" class="is-active" lang="en">EN</a>
-                  <span class="zinova-lang-sep" aria-hidden="true">|</span>
-                  <a href="/ar/" lang="ar">العربية</a>
-                </span>
-              </li>
-            </ul>
-            <a class="menu-trigger">
-              <span>Menu</span>
-            </a>
+            <div class="zinova-nav-inner">
+              <a href="/#welcome" class="logo">Zinova</a>
+              <div class="zinova-nav-middle">
+                <ul class="nav">
+                  <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                  <li class="scroll-to-section"><a href="#studio" class="menu-item">Studio</a></li>
+                  <li class="scroll-to-section"><a href="#services" class="menu-item">Services</a></li>
+                  <li class="scroll-to-section"><a href="#process" class="menu-item">Process</a></li>
+                  <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact</a></li>
+                </ul>
+                <div class="zinova-nav-lang" aria-label="Language">
+                  <span class="zinova-lang-switch" dir="ltr">
+                    <a href="/" class="is-active" lang="en">EN</a>
+                    <span class="zinova-lang-sep" aria-hidden="true">|</span>
+                    <a href="/ar/" lang="ar">العربية</a>
+                  </span>
+                </div>
+              </div>
+              <a class="menu-trigger"><span>Menu</span></a>
+            </div>
           </nav>
         </div>
       </div>
@@ -315,6 +317,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
+              <p class="zinova-contact-disclaimer">Zinova does not accept automatic project purchases through the website. Every engagement starts with a short conversation, followed by a written proposal and agreed scope.</p>
               <form id="contact" onsubmit="return submitStrategyCall(this);">
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
@@ -383,7 +386,18 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="sub-footer">
-            <p>&copy; 2026 Zinova. All rights reserved.</p>
+            <div class="zinova-footer-legal-block">
+              <p class="zinova-footer-legal-line">Zinova OÜ<br>Registered in Estonia</p>
+              <!-- TODO: Add Estonia registry code if needed -->
+              <nav class="zinova-footer-meta-links" aria-label="Legal">
+                <a href="/privacy.html">Privacy Policy</a>
+                <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+                <a href="/terms.html">Terms of Service</a>
+                <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+                <a href="/#contact-us">Contact</a>
+              </nav>
+              <p class="zinova-footer-copy">&copy; 2026 Zinova. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -398,7 +412,7 @@
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/jquery.counterup.min.js"></script>
   <script src="assets/js/imgfix.min.js"></script>
-  <script src="assets/js/custom.js?v=20260510"></script>
+  <script src="assets/js/custom.js?v=20260512"></script>
 
   <script>
     function submitStrategyCall(form) {

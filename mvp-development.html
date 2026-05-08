@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-lava.css">
-  <link rel="stylesheet" href="assets/css/zinova-overrides.css?v=20260510">
-  <link rel="stylesheet" href="assets/css/zinova-rtl.css?v=20260510">
+  <link rel="stylesheet" href="assets/css/zinova-overrides.css?v=20260512">
+  <link rel="stylesheet" href="assets/css/zinova-rtl.css?v=20260512">
 </head>
 
 <body>
@@ -34,22 +34,26 @@
       <div class="row">
         <div class="col-12">
           <nav class="main-nav zinova-main-nav zinova-main-nav--compact" role="navigation" aria-label="Primary">
-            <a href="/#welcome" class="logo">Zinova</a>
-            <ul class="nav">
-              <li><a href="/#welcome">Home</a></li>
-              <li><a href="/#studio">Studio</a></li>
-              <li><a href="/#services">Services</a></li>
-              <li><a href="/#process">Process</a></li>
-              <li><a href="/#contact-us">Contact</a></li>
-              <li class="zinova-lang-item" aria-label="Language">
-                <span class="zinova-lang-switch" dir="ltr">
-                  <a href="/" class="is-active" lang="en">EN</a>
-                  <span class="zinova-lang-sep" aria-hidden="true">|</span>
-                  <a href="/ar/" lang="ar">العربية</a>
-                </span>
-              </li>
-            </ul>
-            <a class="menu-trigger"><span>Menu</span></a>
+            <div class="zinova-nav-inner">
+              <a href="/#welcome" class="logo">Zinova</a>
+              <div class="zinova-nav-middle">
+                <ul class="nav">
+                  <li><a href="/#welcome">Home</a></li>
+                  <li><a href="/#studio">Studio</a></li>
+                  <li><a href="/#services">Services</a></li>
+                  <li><a href="/#process">Process</a></li>
+                  <li><a href="/#contact-us">Contact</a></li>
+                </ul>
+                <div class="zinova-nav-lang" aria-label="Language">
+                  <span class="zinova-lang-switch" dir="ltr">
+                    <a href="/" class="is-active" lang="en">EN</a>
+                    <span class="zinova-lang-sep" aria-hidden="true">|</span>
+                    <a href="/ar/mvp-development.html" lang="ar">العربية</a>
+                  </span>
+                </div>
+              </div>
+              <a class="menu-trigger"><span>Menu</span></a>
+            </div>
           </nav>
         </div>
       </div>
@@ -83,10 +87,19 @@
     </div>
   </article>
 
-  <footer class="zinova-footer" style="margin-top:0;padding-top:60px;">
+  <footer class="zinova-footer zinova-footer--compact" style="margin-top:0;padding-top:48px;">
     <div class="container">
-      <div class="sub-footer" style="padding:30px 0;">
-        <p style="margin:0;">&copy; 2026 Zinova. <a href="/#welcome" style="color:#fba70b;">Home</a></p>
+      <div class="zinova-footer-legal-block">
+        <p class="zinova-footer-legal-line">Zinova OÜ<br>Registered in Estonia</p>
+        <!-- TODO: Add Estonia registry code if needed -->
+        <nav class="zinova-footer-meta-links" aria-label="Legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+          <a href="/terms.html">Terms of Service</a>
+          <span class="zinova-footer-meta-sep" aria-hidden="true">·</span>
+          <a href="/#contact-us">Contact</a>
+        </nav>
+        <p class="zinova-footer-copy">&copy; 2026 Zinova. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -95,6 +108,6 @@
   <script src="assets/js/popper.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/scrollreveal.min.js"></script>
-  <script src="assets/js/custom.js?v=20260510"></script>
+  <script src="assets/js/custom.js?v=20260512"></script>
 </body>
 </html>

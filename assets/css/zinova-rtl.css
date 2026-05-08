@@ -92,7 +92,7 @@
   letter-spacing: 0;
   font-size: 28px;
   font-weight: 700;
-  color: #c67d3a;
+  color: var(--zinova-accent-em);
   margin-bottom: 8px;
 }
 
@@ -107,13 +107,14 @@
 }
 
 @media (min-width: 992px) {
-  [dir="rtl"] .header-area .main-nav.zinova-main-nav {
+  [dir="rtl"] .header-area .main-nav.zinova-main-nav .zinova-nav-middle {
     flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: auto;
   }
 
-  [dir="rtl"] .header-area .main-nav.zinova-main-nav .nav {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+  [dir="rtl"] .header-area .main-nav.zinova-main-nav .zinova-nav-middle .nav {
     justify-content: flex-start;
   }
 }
@@ -191,6 +192,22 @@
 
 [dir="rtl"] .zinova-cap-note {
   text-align: center;
+}
+
+[dir="rtl"] .page-hero h1,
+[dir="rtl"] .page-hero p {
+  text-align: right;
+}
+
+[dir="rtl"] .page-content ul {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+[lang="ar"] .zinova-contact-disclaimer {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 [dir="rtl"] .sub-footer p {
