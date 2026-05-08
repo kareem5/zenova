@@ -42,8 +42,12 @@
 	mobileNav();
 
 
-	// Scroll animation init
-	window.sr = new scrollReveal();
+	// ScrollReveal: desktop only — avoids competing with zinova-reveal / IO on mobile (scroll jank)
+	var mqSrDesktop = window.matchMedia("(min-width: 992px)");
+	var mqSrMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+	if (typeof scrollReveal !== "undefined" && mqSrDesktop.matches && !mqSrMotion.matches) {
+		window.sr = new scrollReveal();
+	}
 
 
 	// Menu Dropdown Toggle
@@ -252,11 +256,26 @@
 (function () {
 	"use strict";
 	try {
-		if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		var nodes = document.querySelectorAll(".zinova-reveal");
+		var mqReduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+		var mqMobile = window.matchMedia("(max-width: 991px)");
+
+		if (mqReduce.matches) {
 			document.documentElement.classList.add("zinova-reduced-motion");
+			for (var r = 0; r < nodes.length; r++) {
+				nodes[r].classList.add("is-visible");
+			}
 			return;
 		}
-		var nodes = document.querySelectorAll(".zinova-reveal");
+
+		if (mqMobile.matches) {
+			document.documentElement.classList.add("zinova-mobile-lite-motion");
+			for (var m = 0; m < nodes.length; m++) {
+				nodes[m].classList.add("is-visible");
+			}
+			return;
+		}
+
 		if (!nodes.length) {
 			return;
 		}
