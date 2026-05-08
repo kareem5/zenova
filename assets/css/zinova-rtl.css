@@ -7,6 +7,7 @@
   line-height: 1.85;
   color: #5a5a5a;
   margin-bottom: 0;
+  max-width: 38rem;
 }
 
 [lang="ar"] .welcome-area.zinova-hero .header-text h1 {
@@ -210,6 +211,119 @@
   margin-right: 0;
 }
 
+[lang="ar"] .zinova-latin {
+  unicode-bidi: embed;
+  font-family: inherit;
+}
+
+body.zinova-ar-legal {
+  overflow-x: hidden;
+}
+
+body.zinova-ar-legal .page-hero {
+  text-align: right;
+}
+
+body.zinova-ar-legal .page-hero .container {
+  text-align: right;
+}
+
+body.zinova-ar-legal .page-hero h1 {
+  text-align: right;
+  max-width: min(42rem, 100%);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body.zinova-ar-legal .page-hero p {
+  text-align: right;
+  max-width: min(42rem, 100%);
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.78;
+}
+
+body.zinova-ar-legal article.page-content.page-legal {
+  direction: rtl;
+  text-align: right;
+}
+
+body.zinova-ar-legal .page-content.page-legal .container > .row {
+  justify-content: center;
+}
+
+body.zinova-ar-legal .page-content.page-legal .row > [class*="col-"] {
+  max-width: min(42rem, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+body.zinova-ar-legal .page-legal h2 {
+  text-align: right;
+}
+
+body.zinova-ar-legal .page-legal .page-legal-lead {
+  text-align: right;
+}
+
+body.zinova-ar-legal .page-legal p {
+  text-align: right;
+  line-height: 1.88;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+body.zinova-ar-legal .page-legal ul {
+  padding-right: 1.35rem;
+  padding-left: 0;
+  margin: 0 0 1rem 0;
+  list-style-position: outside;
+}
+
+body.zinova-ar-legal .page-legal li {
+  text-align: right;
+  margin-bottom: 0.65rem;
+}
+
+body.zinova-ar-legal .page-legal code {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+body.zinova-ar-legal .page-legal a.zinova-latin {
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+body.zinova-ar-legal footer.zinova-footer--compact .zinova-footer-legal-block {
+  text-align: right;
+}
+
+body.zinova-ar-legal .zinova-footer-legal-line {
+  text-align: right;
+  line-height: 1.65;
+}
+
+body.zinova-ar-legal .zinova-footer-meta-links {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+body.zinova-ar-legal .zinova-footer-copy {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  body.zinova-ar-legal .page-content.page-legal .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
 [dir="rtl"] .sub-footer p {
   text-align: center;
 }
@@ -217,7 +331,7 @@
 @media (max-width: 991px) {
   [dir="rtl"] .header-area .main-nav .menu-trigger {
     right: auto !important;
-    left: 40px !important;
+    left: 15px !important;
   }
 
   [dir="rtl"] .header-area .logo {
