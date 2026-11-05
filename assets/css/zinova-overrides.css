@@ -832,18 +832,54 @@ footer.zinova-footer {
 .page-content h2 {
   font-size: 22px;
   margin: 32px 0 14px;
-  color: #1e1e1e;
+  color: var(--zinova-text-primary);
+  letter-spacing: -0.02em;
 }
 
-.page-content ul {
+.page-content p {
+  color: var(--zinova-text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.page-content ul,
+.page-content ol {
   padding-left: 20px;
   margin-bottom: 16px;
 }
 
+.page-content ol {
+  list-style-position: outside;
+}
+
 .page-content li {
   margin-bottom: 8px;
-  color: #666;
-  line-height: 26px;
+  color: var(--zinova-text-muted);
+  line-height: 1.7;
+}
+
+.page-content a {
+  color: var(--zinova-accent-strong);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.page-content a:hover {
+  color: var(--zinova-accent-hover);
+}
+
+.zinova-page-cta {
+  margin-top: 22px;
+}
+
+.zinova-page-cta--follow {
+  margin-top: 24px;
+}
+
+.zinova-footer--compact.zinova-footer--page {
+  margin-top: 0;
+  padding-top: 48px;
 }
 
 .header-area {
@@ -988,11 +1024,22 @@ button.main-button:hover {
   color: var(--zinova-accent);
 }
 
+.zinova-faq {
+  margin: 8px 0 28px;
+  padding: 24px 26px 22px;
+  border-radius: var(--zinova-radius-lg);
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-left: 3px solid var(--zinova-accent);
+  box-shadow: var(--zinova-shadow-sm);
+}
+
 .zinova-faq h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  color: #1a1a1a;
-  margin: 28px 0 10px;
+  color: var(--zinova-text-primary);
+  margin: 22px 0 8px;
+  letter-spacing: -0.01em;
 }
 
 .zinova-faq h3:first-child {
@@ -1000,13 +1047,18 @@ button.main-button:hover {
 }
 
 .zinova-faq p {
-  color: #666;
-  line-height: 26px;
+  color: var(--zinova-text-muted);
+  line-height: 1.7;
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .page-content .zinova-faq {
   margin-bottom: 8px;
+}
+
+.zinova-section .zinova-faq {
+  text-align: left;
 }
 
 .page-legal .page-legal-lead {
