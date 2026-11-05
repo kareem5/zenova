@@ -968,6 +968,47 @@ button.main-button:hover {
   margin: 0;
 }
 
+.zinova-footer-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 0 0 16px;
+}
+
+.zinova-footer-services a {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.zinova-footer-services a:hover {
+  color: var(--zinova-accent);
+}
+
+.zinova-faq h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 28px 0 10px;
+}
+
+.zinova-faq h3:first-child {
+  margin-top: 0;
+}
+
+.zinova-faq p {
+  color: #666;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.page-content .zinova-faq {
+  margin-bottom: 8px;
+}
+
 .page-legal .page-legal-lead {
   font-size: 13px;
   letter-spacing: 0.02em;
